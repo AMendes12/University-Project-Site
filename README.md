@@ -16,17 +16,25 @@ The main goal of this website is to inform users about animal abandonment in Por
 Based on the assignment specifications: 
 
 -Structured navigation with multiple pages (Home, About, Animals, Contact, etc.);
+
 -A dedicated Animals section containing a gallery/grid with animal images and descriptions;
+
 -Semantic HTML structure following accessibility best practices;
+
 -Organized CSS for layout, color schemes, fonts, and responsiveness;
+
 -Interactive elements using JavaScript (DOM manipulation);
+
 -Animation requirements: at least 5 images and one animation;
+
 -Clean file structure with folders such as /css, /images, /scripts, and /animals.
 
 # Technologies Used
 
 -HTML5 – semantic structure
+
 -CSS3 – page styling, visual identity, layout, responsiveness
+
 -JavaScript – animations, DOM interaction, dynamic elements
 
 # Learning Outcomes
@@ -34,7 +42,9 @@ Based on the assignment specifications:
 This project demonstrates competencies in:
 
 -Website planning and mockup creation;
+
 -Structuring multi-page sites;
+
 -Applying design rules and color schemes;
--Implementing animations and DOM manipulation;
--Writing clean, standards-compliant code as required in the evaluation criteria.
+
+-Implementing animations and DOM manipulation;-Writing clean, standards-compliant code as required in the evaluation criteria.
