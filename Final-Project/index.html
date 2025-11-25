@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adoção de Animais</title>
+    <link rel="stylesheet" href="css/indexCss.css" />
+</head>
+<body>
+    <nav class="navbar">
+    <div class="navbar-container">
+        <a href="index.html" class="navbar-logo">
+            Adota um Pet
+        </a>
+        
+        <ul class="navbar-menu">
+            <li><a href="adocao.html">Animais</a></li>
+            <li><a href="autores.html">Equipa</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1 class="large-text">Diga não ao absandono</h1>
+            <p class="small-text">Crime previsto e punido pelo Código Penal</p>
+            <h1 class="large-text">Diga sim à adoção</h1>
+            <button id="scrollButton">Prosseguir para a história</button>
+        </div>
+    </section>
+
+     <section id="story" class="story fullscreen">
+        <h2>Por que é importante adotar?</h2>
+        <p>
+            Adotar um animal é um ato de amor que salva vidas. Todos os anos, milhares de cães e gatos são abandonados,
+            ficando expostos a fome, doenças e perigos das ruas. A adoção responsável não apenas oferece um lar seguro
+            a quem mais precisa, como também contribui para a redução do abandono e da superpopulação.
+        </p>
+        <p>
+            Quando adotamos, damos uma segunda oportunidade para um animal viver com dignidade, carinho e proteção. 
+            Eles retribuem com lealdade, amor incondicional e alegria que transformam o dia a dia de uma casa.
+        </p>
+        <p>
+            Adotar é também um ato de cidadania e responsabilidade social, ajudando a combater o comércio ilegal de animais
+            e incentivando práticas conscientes. Seja a diferença na vida de um animal e descubra como o amor e a gratidão
+            podem mudar o teu mundo.
+        </p>
+        <p>
+            Juntos, podemos criar uma comunidade mais compassiva, onde cada vida importa e onde cada animal tem a oportunidade
+            de ser amado e cuidado. Não compres, adota. Diga não ao abandono e sim à adoção.
+        </p>
+
+        <div class="button-container">
+            <button class="proceed-button" onclick="window.location.href='adocao.html'">Prosseguir para Adoção</button>
+        </div>
+    </section>
+
+    <section class="animations-section">
+        <h2>Algumas das nossas pestes</h2>
+        <div class="animations-grid">
+            <!-- Animação 1 -->
+            <div class="animation-card bounce-anim">
+                <img src="imgs/pincher.jpg" alt="Cão para adoção" class="animation-img">
+                <div class="animation-name">Bolinha</div>
+            </div>
+            
+            <!-- Animação 2 -->
+            <div class="animation-card spin-anim">
+                <img src="imgs/gatoadulto2.jpg" alt="Gato para adoção" class="animation-img">
+                <div class="animation-name">Vera</div>
+            </div>
+            
+            <!-- Animação 3 -->
+            <div class="animation-card shake-anim">
+                <img src="imgs/coelho.jpg" alt="Coelho para adoção" class="animation-img">
+                <div class="animation-name">Cotton</div>
+            </div>
+            
+            <!-- Animação 4 -->
+            <div class="animation-card pulse-anim">
+                <img src="imgs/canario.jpg" alt="Ave para adoção" class="animation-img">
+                <div class="animation-name">Piu-Piu</div>
+            </div>
+            
+            <!-- Animação 5 -->
+            <div class="animation-card flip-anim">
+                <img src="imgs/hamster1.jpg" alt="Roedor para adoção" class="animation-img">
+                <div class="animation-name">Chocolate</div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Sobre Nós</h3>
+            <p>Organização ficticia criada para o desenvolvimento do projeto de epoca de recurso de IPW.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Contactos</h3>
+            <ul>
+                <li><i class="fas fa-phone"></i> +351 123 456 789</li>
+                <li><i class="fas fa-envelope"></i> geral@adotaumpet.pt</li>
+                <li><i class="fas fa-map-marker-alt"></i> Rua dos Animais, 123, Porto</li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Horário</h3>
+            <ul>
+                <li>Seg-Sex: 10h-18h</li>
+                <li>Sábado: 10h-14h</li>
+                <li>Domingo: Fechado</li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Equipa</h3>
+            <a href="autores.html" class="team-link">
+                <i class="fas fa-users"></i> Conheça os desenvolvedores
+            </a>
+        </div>
+        
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2025 Adota um Pet. Projeto de IPW.</p>
+    </div>
+</footer>
+
+    <script src="js/indexScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,390 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('../imgs/indexImg.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  animation: fadeIn 2s ease-out;
+}
+
+.large-text {
+  font-size: 3.5rem; /* aumentado */
+  font-weight: bold;
+  margin-bottom: 10px;
+  animation: slideIn 1.5s ease-out;
+}
+
+.small-text {
+  font-size: 1.2rem;
+  color: #f1c40f;
+  font-style: italic;
+  margin-bottom: 30px;
+  animation: fadeIn 3s ease-out;
+}
+
+button#scrollButton {
+  background-color: #f1c40f;
+  color: #111;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  animation: fadeIn 4s ease-out;
+}
+
+button#scrollButton:hover {
+  background-color: #d4ac0d;
+  transform: scale(1.05);
+}
+
+/* Story Section */
+.story {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+
+.story h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.story p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+  line-height: 1.6;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+    background: #2c3e50;
+    color: white;
+    padding: 40px 0 0;
+    font-size: 14px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.footer-section h3 {
+    color: #ffd700;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #ffd700;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 0.9rem;
+}
+
+/* ===== NAVBAR ESTÁTICA ===== */
+.navbar {
+    background-color: #2c3e50;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    padding: 5px 0;
+    position: relative;
+}
+
+.navbar-menu a:hover {
+    color: #ffd700;
+}
+
+.navbar-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffd700;
+    transition: width 0.3s;
+}
+
+.navbar-menu a:hover::after {
+    width: 100%;
+}
+
+/* Versão Mobile */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .navbar-menu {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Estilos para a seção de animações */
+        .animations-section {
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        
+        .animations-section h2 {
+            font-size: 2.2rem;
+            color: #2c3e50;
+            margin-bottom: 40px;
+        }
+        
+        .animations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .animation-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .animation-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .animation-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        
+        .animation-name {
+            padding: 15px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        /* Animações */
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        @keyframes flip {
+            0% { transform: perspective(400px) rotateY(0); }
+            100% { transform: perspective(400px) rotateY(180deg); }
+        }
+        
+        .bounce-anim:hover img {
+            animation: bounce 1s ease infinite;
+        }
+        
+        .spin-anim:hover img {
+            animation: spin 2s linear infinite;
+        }
+        
+        .shake-anim:hover img {
+            animation: shake 0.5s ease infinite;
+        }
+        
+        .pulse-anim:hover img {
+            animation: pulse 1.5s ease infinite;
+        }
+        
+        .flip-anim:hover img {
+            animation: flip 1s ease forwards;
+        }
+
+/* Ícones (Font Awesome) */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .large-text {
+    font-size: 2.5rem;
+  }
+
+  button#scrollButton {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+
+  .story h2 {
+    font-size: 2rem;
+  }
+
+  .story p {
+    font-size: 1.1rem;
+  }
+}
+
+.button-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.proceed-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+}
+
+.proceed-button:hover {
+    background-color: #ff3b2e;
+    transform: scale(1.05);
+}
+

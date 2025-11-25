@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cães de Grande Porte para Adoção</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/adocaoCss.css">
+    <link rel="stylesheet" href="css/opcoesCaesCss.css">
+</head>
+<body>
+   <nav class="navbar">
+    <div class="navbar-container">
+        <a href="index.html" class="navbar-logo">
+            Adota um Pet
+        </a>
+        
+        <ul class="navbar-menu">
+            <li><a href="adocao.html">Animais</a></li>
+            <li><a href="autores.html">Equipa</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <header class="main-header" style="height: 60vh; min-height: 400px;">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1 class="header-title">Cães de Grande Porte</h1>
+            <p class="header-subtitle">Conheça nossos gigantes à espera de um lar</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="animal-gallery">
+            <!-- Cão 1 -->
+            <div class="animal-card">
+                <div class="animal-image" style="background-image: url('imgs/shiba.jpg');"></div>
+                <div class="animal-info">
+                    <h3 class="animal-name">Hachi</h3>
+                    <div class="animal-meta">
+                        <span>♂ Macho</span>
+                        <span>5 anos</span>
+                        <span>30 kg</span>
+                    </div>
+                    <p class="animal-description">Hachi é um akita, super docil e carinhoso, dizem que é das raças mais leais ao seu dono.</p>
+                    <a href="mailto:201902460@estudantes.ips.pt?subject=Adoção%20do%20cão%20Bolinha%20(ID:CP001)" class="adopt-button">Quero Adotar</a>
+                </div>
+            </div>
+            
+            <!-- Cão 2 -->
+            <div class="animal-card">
+                <div class="animal-image" style="background-image: url('imgs/doberman.jpg');"></div>
+                <div class="animal-info">
+                    <h3 class="animal-name">Bela</h3>
+                    <div class="animal-meta">
+                        <span>♀ Fêmea</span>
+                        <span>6 anos</span>
+                        <span>26 kg</span>
+                    </div>
+                    <p class="animal-description">Bela é uma doberman, perfeita para quem gosta de um cão com otimo treino e proteção.</p>
+                    <a href="mailto:201902460@estudantes.ips.pt?subject=Adoção%20do%20cão%20Mel%20(ID:CP002)" class="adopt-button">Quero Adotar</a>
+                </div>
+            </div>
+            
+            <!-- Cão 3 -->
+            <div class="animal-card">
+                <div class="animal-image" style="background-image: url('imgs/canecorso.jpg');"></div>
+                <div class="animal-info">
+                    <h3 class="animal-name">Bruce</h3>
+                    <div class="animal-meta">
+                        <span>♂ Macho</span>
+                        <span>5 anos</span>
+                        <span>38 kg</span>
+                    </div>
+                    <p class="animal-description">Bruce é um cane corso, mas apesar do seu tamanho, é um cão ideal para ficar no sofá ao seu lado.</p>
+                    <a href="mailto:201902460@estudantes.ips.pt?subject=Adoção%20do%20cão%20Thor%20(ID:CP003)" class="adopt-button">Quero Adotar</a>
+                </div>
+            </div>
+
+             <div class="animal-card">
+            <div class="animal-image" style="background-image: url('imgs/golden.jpg');"></div>
+            <div class="animal-info">
+                <h3 class="animal-name">Fusa</h3>
+                <div class="animal-meta">
+                    <span>♀ Fêmea</span>
+                    <span>6 anos</span>
+                    <span>29 kg</span>
+                </div>
+                <p class="animal-description">Fusa é uma golden retriever, perfeito para quem gosta de cães com personalidade própria.</p>
+                <a href="mailto:201902460@estudantes.ips.pt?subject=Adoção%20do%20cão%20Luna%20(ID:CP004)" class="adopt-button">Quero Adotar</a>
+            </div>
+        </div>
+        </div>
+
+       
+    </div>
+
+    
+        
+        <a href="adocao.html" class="back-link">← Voltar para todas as categorias</a>
+
+        
+    </main>
+
+    <section class="comments-section">
+    <h3>Comentários</h3>
+    
+    <div class="comment-form">
+        <textarea placeholder="Deixe seu comentário..." id="comment-text"></textarea>
+        <button id="add-comment">Adicionar Comentário</button>
+    </div>
+    
+    <div class="comment-controls">
+        <label>Cor de fundo:
+            <input type="color" id="bg-color" value="#ffffff">
+        </label>
+        <label>Cor do texto:
+            <input type="color" id="text-color" value="#000000">
+        </label>
+        <label>Tamanho do texto:
+            <input type="range" id="text-size" min="12" max="24" value="14">
+        </label>
+    </div>
+    
+    <div class="comments-list" id="comments-container">
+        <!-- Comentários serão adicionados aqui -->
+    </div>
+</section>
+
+    <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Sobre Nós</h3>
+            <p>Organização ficticia criada para o desenvolvimento do projeto de epoca de recurso de IPW.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Contactos</h3>
+            <ul>
+                <li><i class="fas fa-phone"></i> +351 123 456 789</li>
+                <li><i class="fas fa-envelope"></i> geral@adotaumpet.pt</li>
+                <li><i class="fas fa-map-marker-alt"></i> Rua dos Animais, 123, Porto</li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Horário</h3>
+            <ul>
+                <li>Seg-Sex: 10h-18h</li>
+                <li>Sábado: 10h-14h</li>
+                <li>Domingo: Fechado</li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Equipa</h3>
+            <a href="autores.html" class="team-link">
+                <i class="fas fa-users"></i> Conheça os desenvolvedores
+            </a>
+        </div>
+        
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2025 Adota um Pet. Projeto de IPW.</p>
+    </div>
+</footer>
+
+    <script src="js/opcoesCaesScript.js"></script>
+</body>
+</html>

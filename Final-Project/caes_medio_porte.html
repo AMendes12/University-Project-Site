@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cães de Médio Porte para Adoção</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/adocaoCss.css">
+    <link rel="stylesheet" href="css/opcoesCaesCss.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="navbar-container">
+        <a href="index.html" class="navbar-logo">
+            Adota um Pet
+        </a>
+        
+        <ul class="navbar-menu">
+            <li><a href="adocao.html">Animais</a></li>
+            <li><a href="autores.html">Equipa</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <header class="main-header" style="height: 60vh; min-height: 400px;">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1 class="header-title">Cães de Medio Porte</h1>
+            <p class="header-subtitle">Conheça nossos companheiros à espera de um lar</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="animal-gallery">
+            <!-- Cão 1 -->
+            <div class="animal-card">
+                <div class="animal-image" style="background-image: url('imgs/beagle.jpg');"></div>
+                <div class="animal-info">
+                    <h3 class="animal-name">Rex</h3>
+                    <div class="animal-meta">
+                        <span>♂ Macho</span>
+                        <span>4 anos</span>
+                        <span>14 kg</span>
+                    </div>
+                    <p class="animal-description">Rex é um beagle que adora comer, ajudar na cozinha e correr pela casa.</p>
+                    <a href="mailto:201902460@estudantes.ips.pt?subject=Adoção%20do%20cão%20Bolinha%20(ID:CP001)" class="adopt-button">Quero Adotar</a>
+                </div>
+            </div>
+            
+            <!-- Cão 2 -->
+            <div class="animal-card">
+                <div class="animal-image" style="background-image: url('imgs/dalmata.jpg');"></div>
+                <div class="animal-info">
+                    <h3 class="animal-name">Pongo</h3>
+                    <div class="animal-meta">
+                        <span>♂ Macho</span>
+                        <span>2 anos</span>
+                        <span>17 kg</span>
+                    </div>
+                    <p class="animal-description">Dama é um dalmata super calmo, carinhoso e perfeito para uma caminhada a seu lado.</p>
+                    <a href="mailto:201902460@estudantes.ips.pt?subject=Adoção%20do%20cão%20Mel%20(ID:CP002)" class="adopt-button">Quero Adotar</a>
+                </div>
+            </div>
+            
+            <!-- Cão 3 -->
+            <div class="animal-card">
+                <div class="animal-image" style="background-image: url('imgs/chowchow.jpg');"></div>
+                <div class="animal-info">
+                    <h3 class="animal-name">Cookie</h3>
+                    <div class="animal-meta">
+                        <span>♂ Macho</span>
+                        <span>5 anos</span>
+                        <span>12 kg</span>
+                    </div>
+                    <p class="animal-description">Cookie é um chow chow perfeito para quem gosta de uma companhia tranquila.</p>
+                    <a href="mailto:201902460@estudantes.ips.pt?subject=Adoção%20do%20cão%20Thor%20(ID:CP003)" class="adopt-button">Quero Adotar</a>
+                </div>
+            </div>
+
+             <div class="animal-card">
+            <div class="animal-image" style="background-image: url('imgs/basset.jpg');"></div>
+            <div class="animal-info">
+                <h3 class="animal-name">Moon</h3>
+                <div class="animal-meta">
+                    <span>♀ Fêmea</span>
+                    <span>3 anos</span>
+                    <span>21 kg</span>
+                </div>
+                <p class="animal-description">Moon é uma Basset hound que adora carinho e encontrar tudo o que perder devido ao seu apurado olfato.</p>
+                <a href="mailto:201902460@estudantes.ips.pt?subject=Adoção%20do%20cão%20Luna%20(ID:CP004)" class="adopt-button">Quero Adotar</a>
+            </div>
+        </div>
+        </div>
+
+       
+    </div>
+
+    
+        
+        <a href="adocao.html" class="back-link">← Voltar para todas as categorias</a>
+    </main>
+
+    <section class="comments-section">
+    <h3>Comentários</h3>
+    
+    <div class="comment-form">
+        <textarea placeholder="Deixe seu comentário..." id="comment-text"></textarea>
+        <button id="add-comment">Adicionar Comentário</button>
+    </div>
+    
+    <div class="comment-controls">
+        <label>Cor de fundo:
+            <input type="color" id="bg-color" value="#ffffff">
+        </label>
+        <label>Cor do texto:
+            <input type="color" id="text-color" value="#000000">
+        </label>
+        <label>Tamanho do texto:
+            <input type="range" id="text-size" min="12" max="24" value="14">
+        </label>
+    </div>
+    
+    <div class="comments-list" id="comments-container">
+        <!-- Comentários serão adicionados aqui -->
+    </div>
+</section>
+
+    <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Sobre Nós</h3>
+            <p>Organização ficticia criada para o desenvolvimento do projeto de epoca de recurso de IPW.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Contactos</h3>
+            <ul>
+                <li><i class="fas fa-phone"></i> +351 123 456 789</li>
+                <li><i class="fas fa-envelope"></i> geral@adotaumpet.pt</li>
+                <li><i class="fas fa-map-marker-alt"></i> Rua dos Animais, 123, Porto</li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Horário</h3>
+            <ul>
+                <li>Seg-Sex: 10h-18h</li>
+                <li>Sábado: 10h-14h</li>
+                <li>Domingo: Fechado</li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Equipa</h3>
+            <a href="autores.html" class="team-link">
+                <i class="fas fa-users"></i> Conheça os desenvolvedores
+            </a>
+        </div>
+        
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2025 Adota um Pet. Projeto de IPW.</p>
+    </div>
+</footer>
+
+    <script src="js/opcoesCaesScript.js"></script>
+</body>
+</html>

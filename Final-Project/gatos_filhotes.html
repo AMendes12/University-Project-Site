@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatos Bebés para Adoção</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/adocaoCss.css">
+    <link rel="stylesheet" href="css/opcoesCaesCss.css">
+</head>
+<body>
+   <nav class="navbar">
+    <div class="navbar-container">
+        <a href="index.html" class="navbar-logo">
+            Adota um Pet
+        </a>
+        
+        <ul class="navbar-menu">
+            <li><a href="adocao.html">Animais</a></li>
+            <li><a href="autores.html">Equipa</a></li>
+        </ul>
+    </div>
+</nav>
+
+   <header class="main-header" style="height: 60vh; min-height: 400px;">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1 class="header-title">Gatos Bebés</h1>
+            <p class="header-subtitle">Adote um pequeno felino cheio de energia e amor</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="animal-gallery">
+            <!-- Gato 1 -->
+            <div class="animal-card">
+                <div class="animal-image" style="background-image: url('imgs/gatobebe1.jpg');"></div>
+                <div class="animal-info">
+                    <h3 class="animal-name">Bella</h3>
+                    <div class="animal-meta">
+                        <span>♀ Fêmea</span>
+                        <span>3 meses</span>
+                        <span>1.2 kg</span>
+                    </div>
+                    <p class="animal-description">Bella é uma gatinha brincalhona que adora perseguir bolinhas de lã e tirar sonecas aconchegantes.</p>
+                    <a href="mailto:201902460@estudantes.ips.pt?subject=Adoção%20do%20gato%20Bolinha%20(ID:GB001)" class="adopt-button">Quero Adotar</a>
+                </div>
+            </div>
+            
+            <!-- Gato 2 -->
+            <div class="animal-card">
+                <div class="animal-image" style="background-image: url('imgs/gatobebe2.jpg');"></div>
+                <div class="animal-info">
+                    <h3 class="animal-name">Peteleco</h3>
+                    <div class="animal-meta">
+                        <span>♂ Macho</span>
+                        <span>4 meses</span>
+                        <span>1.5 kg</span>
+                    </div>
+                    <p class="animal-description">Peteleco é curioso e aventureiro, sempre explorando cada cantinho da casa.</p>
+                    <a href="mailto:201902460@estudantes.ips.pt?subject=Adoção%20do%20gato%20Peteleco%20(ID:GB002)" class="adopt-button">Quero Adotar</a>
+                </div>
+            </div>
+        </div>
+        
+         <a href="adocao.html" class="back-link">← Voltar para todas as categorias</a>
+    </main>
+
+    <section class="comments-section">
+    <h3>Comentários</h3>
+    
+    <div class="comment-form">
+        <textarea placeholder="Deixe seu comentário..." id="comment-text"></textarea>
+        <button id="add-comment">Adicionar Comentário</button>
+    </div>
+    
+    <div class="comment-controls">
+        <label>Cor de fundo:
+            <input type="color" id="bg-color" value="#ffffff">
+        </label>
+        <label>Cor do texto:
+            <input type="color" id="text-color" value="#000000">
+        </label>
+        <label>Tamanho do texto:
+            <input type="range" id="text-size" min="12" max="24" value="14">
+        </label>
+    </div>
+    
+    <div class="comments-list" id="comments-container">
+        <!-- Comentários serão adicionados aqui -->
+    </div>
+</section>
+
+    <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Sobre Nós</h3>
+            <p>Organização ficticia criada para o desenvolvimento do projeto de epoca de recurso de IPW.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Contactos</h3>
+            <ul>
+                <li><i class="fas fa-phone"></i> +351 123 456 789</li>
+                <li><i class="fas fa-envelope"></i> geral@adotaumpet.pt</li>
+                <li><i class="fas fa-map-marker-alt"></i> Rua dos Animais, 123, Porto</li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Horário</h3>
+            <ul>
+                <li>Seg-Sex: 10h-18h</li>
+                <li>Sábado: 10h-14h</li>
+                <li>Domingo: Fechado</li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Equipa</h3>
+            <a href="autores.html" class="team-link">
+                <i class="fas fa-users"></i> Conheça os desenvolvedores
+            </a>
+        </div>
+        
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2025 Adota um Pet. Projeto de IPW.</p>
+    </div>
+</footer>
+
+     <script src="js/opcoesCaesScript.js"></script>
+</body>
+</html>
