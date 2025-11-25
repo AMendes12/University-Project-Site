@@ -3,6 +3,9 @@ University project for Introduction to Web Programming: a website for animal ado
 
 Animal Adoption Awareness Website
 
+## Grade
+15.5/20
+
 # University Project – Introduction to Web Programming
 
 This project was developed for the Introduction to Web Programming course and focuses on raising awareness about abandoned animals. According to the project brief, the website must present information about the issue of animal abandonment and provide structured content that helps visitors understand how to help or adopt animals. 
